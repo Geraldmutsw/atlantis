@@ -1,0 +1,214 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* VARIABLES */
+:root {
+
+    /* COLORS */
+    --color-gray: #6c757d;
+    --color-light: #f8f9fa;
+    --color-dark: #212529;
+    --color-white: #fff;
+    --color-red: #dc3545;
+    --color-green: #28a745;
+    --color-yellow: #ffc107;
+    --color-blue: #007bff;
+    --color-indigo: #6610f2;
+
+    /* FONT */
+    --font-family-base: 'Poppins', sans-serif;
+
+    /* LINE HEIGHTS */
+    --line-height-mobile: 1.6;
+    --line-height-tablet: 1.7;
+    --line-height-desktop: 1.8;
+
+    /* FONT WEIGHTS */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* FONT SIZES FOR PARAGRAPHS */
+    --font-size-base: 16px;
+    --font-size-small: 14px;
+    --font-size-large: 20px;
+
+    /* FONT SIZES FOR DESKTOP DEVICES */
+    --font-size-h1: 3.75rem;
+    --font-size-h2: 3rem;
+    --font-size-h3: 2.5rem;
+    --font-size-h4: 2rem;
+    --font-size-h5: 1.75rem;
+    --font-size-h6: 1.5rem;
+
+    /* FONT SIZES FOR MOBILE DEVICES */
+    --font-size-h1-mobile: 2rem;
+    --font-size-h2-mobile: 1.75rem;
+    --font-size-h3-mobile: 1.5rem;
+    --font-size-h4-mobile: 1.25rem;
+    --font-size-h5-mobile: 1rem;
+    --font-size-h6-mobile: 0.875rem;
+
+    /* FONT SIZES FOR TABLET DEVICES */
+    --font-size-h1-tablets: 2.5rem;
+    --font-size-h2-tablets: 2rem;
+    --font-size-h3-tablets: 1.75rem;
+    --font-size-h4-tablets: 1.5rem;
+    --font-size-h5-tablets: 1.25rem;
+    --font-size-h6-tablets: 1rem;
+
+    /* BORDER RADIUSES */
+    --border-radius: 20px;
+
+    /* TRANSITIONS */
+    --transition-duration: 500ms;
+
+    /* SPACINGS */
+    --zero: 0;
+}
+
+/* GLOBAL STYLES */
+
+html,
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--color-light);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: var(--zero);
+    padding: var(--zero);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+    color: var(--color-dark);
+    margin: var(--zero);
+}
+
+h1 { font-size: var(--font-size-h1);}
+h2 { font-size: var(--font-size-h2);}
+h3 { font-size: var(--font-size-h3);}
+h4 { font-size: var(--font-size-h4);}
+h5 { font-size: var(--font-size-h5);}
+h6 { font-size: var(--font-size-h6);}
+
+p {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    margin: var(--zero);
+}
+
+/* MOBILE DEVICES */
+@media screen and (max-width: 479px) {
+
+    /* TYPOGRAPHY */
+    h1 { font-size: var(--font-size-h1-mobile);}
+    h2 { font-size: var(--font-size-h2-mobile);}
+    h3 { font-size: var(--font-size-h3-mobile);}
+    h4 { font-size: var(--font-size-h4-mobile);}
+    h5 { font-size: var(--font-size-h5-mobile);}
+    h6 { font-size: var(--font-size-h6-mobile);}
+    p { font-size: var(--font-size-small); }
+
+    /* LINE HEIGHT */
+    h1, h2, h3, h4, h5, h6, p, li {
+        line-height: var(--line-height-mobile);
+    }
+}
+
+/* TABLET DEVICES */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* TYPOGRAPHY */
+    h1 { font-size: var(--font-size-h1-tablets);}
+    h2 { font-size: var(--font-size-h2-tablets);}
+    h3 { font-size: var(--font-size-h3-tablets);}
+    h4 { font-size: var(--font-size-h4-tablets);}
+    h5 { font-size: var(--font-size-h5-tablets);}
+    h6 { font-size: var(--font-size-h6-tablets);}
+    p { font-size: var(--font-size-small); }
+
+    /* LINE HEIGHT */
+    h1, h2, h3, h4, h5, h6, p, li {
+        line-height: var(--line-height-tablet);
+    }
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-duration) ease-in-out;
+}
+a:hover {
+    color: var(--color-blue);
+    transition: var(--transition-duration);
+}
+ul {
+    list-style-type: none;
+    padding: var(--zero);
+    margin: var(--zero);
+}
+li {
+    margin: var(--zero);
+    padding: var(--zero);
+}
+
+
+/* COLORS */
+.text-gray { color: var(--color-gray);}
+.text-white { color: var(--color-white);}
+.text-dark { color: var(--color-dark);}
+.text-red { color: var(--color-red);}
+.text-green { color: var(--color-green);}
+.text-yellow { color: var(--color-yellow);}
+.text-blue { color: var(--color-blue);}
+.text-indigo { color: var(--color-indigo);}
+/* BACKGROUND COLORS */
+.bg-gray { color: var(--color-gray);}
+.bg-white { color: var(--color-white);}
+.bg-dark { color: var(--color-dark);}
+.bg-red { color: var(--color-red);}
+.bg-green { color: var(--color-green);}
+.bg-yellow { color: var(--color-yellow);}
+.bg-blue { color: var(--color-blue);}
+.bg-indigo { color: var(--color-indigo);}
+
+
+/* POSITIONING */
+.position-relative { position: relative;}
+.position-absolute { position: absolute;}
+.position-fixed { position: fixed;}
+.position-sticky { position: sticky;}
+
+.display-flex { display: flex;}
+.display-block { display: block;}
+.display-inline-flex { display: inline-flex;}
+.display-inline-block { display: inline-block;}
+
+.flex-row { flex-direction: row;}
+.flex-row-reverse { flex-direction: row-reverse;}
+.flex-column { flex-direction: column;}
+.flex-column-reverse { flex-direction: column-reverse;}
+
+.text-center { text-align: center;}
+.text-left { text-align: left;}
+.text-right { text-align: right;}
+.text-inherit { text-align: inherit;}
+
+.justify-content-center { justify-content: center;}
+.justify-content-left { justify-content: left;}
+.justify-content-right { justify-content: right;}
+.justify-content-space-between { justify-content: space-between;}
+.justify-content-space-around { justify-content: space-around;}
+
+.align-items-center { align-items: center;}
+.align-items-start { align-items: start;}
+.align-items-end { align-items: end;}
+.align-items-baseline { align-items: baseline;}
