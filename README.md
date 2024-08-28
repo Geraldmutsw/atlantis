@@ -1,2 +1,2 @@
 # atlantis
-Atlantis is a CSS Framrwork to help build websites faster
+Atlantis is a light weight CSS  Framework to help build websites faster
